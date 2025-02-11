@@ -1,7 +1,27 @@
+# Core dependencies
 fastapi
 uvicorn
+
+# Database and migrations
 sqlalchemy>=2.0.0
 pydantic
 alembic
 psycopg2-binary  # PostgreSQL driver
-python-dotenv  # For environment variables
+
+# Static type checking
+mypy
+types-PyYAML  # If we use YAML configs
+types-psycopg2  # For psycopg2 type hints
+
+# Linting and formatting (ensuring clean and type-safe code)
+pylint
+black
+isort  # Keep imports sorted
+flake8
+
+# Environment variable management
+python-dotenv
+
+# Testing
+pytest
+httpx  # For FastAPI testing
